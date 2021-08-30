@@ -1,0 +1,392 @@
+SELECT 
+drop table album
+drop table version
+SELECT ALL TABLES DROPPED
+
+CREATE TABLE IF NOT EXISTS album(
+  album_id SMALLINT(4) NOT NULL,
+  album_title VARCHAR(128) NOT NULL,
+  is_owned BOOLEAN NOT NULL,
+  pc VARCHAR(128) NOT NULL,
+  pc_path VARCHAR(128) NOT NULL,
+  PRIMARY KEY (album_id)
+)
+SELECT album TABLE CREATED
+
+CREATE TABLE IF NOT EXISTS version(
+  album_id SMALLINT(4) NOT NULL,
+  v_id SMALLINT(4) NOT NULL,
+  version_name VARCHAR(128) NOT NULL,
+  is_owned BOOLEAN NOT NULL,
+  pc VARCHAR(128),
+  pc_path VARCHAR(128),
+  PRIMARY KEY (album_id, v_id)
+)
+SELECT version TABLE CREATED
+
+
+INSERT INTO album VALUES (1, 2 cool 4 Skool,
+    false,
+    PC,
+    PC_PATH
+)
+
+
+
+INSERT INTO album VALUES (2, O!RUL8,2?,
+    false,
+    PC,
+    PC_PATH
+)
+
+
+
+INSERT INTO album VALUES (3, Skool Luv Affair,
+    false,
+    PC,
+    PC_PATH
+)
+
+
+
+INSERT INTO album VALUES (4, Skool Luv Affair: Special Addition,
+    false,
+    PC,
+    PC_PATH
+)
+
+
+
+INSERT INTO album VALUES (5, No More Dream (Japanese Album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (5,1,Regular,false, PC, PC_PATH)
+INSERT INTO version VALUES (5,2,A,false, PC, PC_PATH)
+INSERT INTO version VALUES (5,3,B,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (6, BOY IN LUV (Japanese Album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (6,1, Regular,false, PC, PC_PATH)
+INSERT INTO version VALUES (6,2, A,false, PC, PC_PATH)
+INSERT INTO version VALUES (6,3, B,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (7, Dark & Wild,
+    false,
+    PC,
+    PC_PATH
+)
+
+
+
+INSERT INTO album VALUES (8, Danger (Japanese Album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (8,1, Regular,false, PC, PC_PATH)
+INSERT INTO version VALUES (8,2, A,false, PC, PC_PATH)
+INSERT INTO version VALUES (8,3, B,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (9, Wake Up (Japanese Album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (9,1, Regular,false, PC, PC_PATH)
+INSERT INTO version VALUES (9,2, A,false, PC, PC_PATH)
+INSERT INTO version VALUES (9,3, B,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (10, The Most Beautiful Moment in Life, Pt.1,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (10,1, Pink,false, PC, PC_PATH)
+INSERT INTO version VALUES (10,2, White,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (11, FOR YOU (Japanese Album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (11,1, Regular,false, PC, PC_PATH)
+INSERT INTO version VALUES (11,2, A,false, PC, PC_PATH)
+INSERT INTO version VALUES (11,3, B,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (12, The Most Beautiful Moment in Life, Pt.2,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (12,1, Blue,false, PC, PC_PATH)
+INSERT INTO version VALUES (12,2, Peach,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (13, I NEED YOU (Japanese Album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (13,1, Regular,false, PC, PC_PATH)
+INSERT INTO version VALUES (13,2, Limited Edition,false, PC, PC_PATH)
+INSERT INTO version VALUES (13,3, Christmas Special,false, PC, PC_PATH)
+INSERT INTO version VALUES (13,4, HMV,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (14, RUN (Japanese Album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (14,1, Regular,false, PC, PC_PATH)
+INSERT INTO version VALUES (14,2, Poney Canyon Limited Ed.,false, PC, PC_PATH)
+INSERT INTO version VALUES (14,3, HMV Limited Ed.,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (15, The Most Beautiful Moment in Life: Young Forever,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (15,1, Night,false, PC, PC_PATH)
+INSERT INTO version VALUES (15,2, Day,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (16, Youth,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (16,1, Regular,false, PC, PC_PATH)
+INSERT INTO version VALUES (16,2, Limited Edition,false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (17, Wings,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (17,1, W, false, PC, PC_PATH)
+INSERT INTO version VALUES (17,2, I, false, PC, PC_PATH)
+INSERT INTO version VALUES (17,3, N, false, PC, PC_PATH)
+INSERT INTO version VALUES (17,4, G, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (18, You Never Walk Alone,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (18,1, Left, false, PC, PC_PATH)
+INSERT INTO version VALUES (18,2, Right, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (19, 血、汗、涙 Blood Sweat & Tears (Japanese Album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (19,1, A, false, PC, PC_PATH)
+INSERT INTO version VALUES (19,2, B, false, PC, PC_PATH)
+INSERT INTO version VALUES (19,3, C, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (20, Love Yourself 承 'Her',
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (20,1, L, false, PC, PC_PATH)
+INSERT INTO version VALUES (20,2, O, false, PC, PC_PATH)
+INSERT INTO version VALUES (20,3, V, false, PC, PC_PATH)
+INSERT INTO version VALUES (20,4, E, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (21, MIC DROP / DNA / CRYSTAL SNOW (Japanese album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (21,1, A, false, PC, PC_PATH)
+INSERT INTO version VALUES (21,2, B, false, PC, PC_PATH)
+INSERT INTO version VALUES (21,3, C, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (22, FACE YOURSELF,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (22,1, Regular, false, PC, PC_PATH)
+INSERT INTO version VALUES (22,2, A, false, PC, PC_PATH)
+INSERT INTO version VALUES (22,3, B, false, PC, PC_PATH)
+INSERT INTO version VALUES (22,4, C, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (23, Love Yourself 轉 'Tear',
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (23,1, Y, false, PC, PC_PATH)
+INSERT INTO version VALUES (23,2, O, false, PC, PC_PATH)
+INSERT INTO version VALUES (23,3, U, false, PC, PC_PATH)
+INSERT INTO version VALUES (23,4, R, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (24, Love Yourself 結 'Answer',
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (24,1, S, false, PC, PC_PATH)
+INSERT INTO version VALUES (24,2, E, false, PC, PC_PATH)
+INSERT INTO version VALUES (24,3, L, false, PC, PC_PATH)
+INSERT INTO version VALUES (24,4, F, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (25, FAKE LOVE/Airplane Pt.2 (Japanese Album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (25,1, Regular, false, PC, PC_PATH)
+INSERT INTO version VALUES (25,2, A, false, PC, PC_PATH)
+INSERT INTO version VALUES (25,3, B, false, PC, PC_PATH)
+INSERT INTO version VALUES (25,4, C, false, PC, PC_PATH)
+INSERT INTO version VALUES (25,5, Fanclub, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (26, Map of the Soul: Persona,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (26,1, 01, false, PC, PC_PATH)
+INSERT INTO version VALUES (26,2, 02, false, PC, PC_PATH)
+INSERT INTO version VALUES (26,3, 03, false, PC, PC_PATH)
+INSERT INTO version VALUES (26,4, 04, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (27, BTS World (Original Soundtrack),
+    false,
+    PC,
+    PC_PATH
+)
+
+
+
+INSERT INTO album VALUES (28, Lights/Boy With Luv (Japanese Album),
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (28,1, Regular, false, PC, PC_PATH)
+INSERT INTO version VALUES (28,2, A, false, PC, PC_PATH)
+INSERT INTO version VALUES (28,3, B, false, PC, PC_PATH)
+INSERT INTO version VALUES (28,4, C, false, PC, PC_PATH)
+INSERT INTO version VALUES (28,5, Fanclub, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (29, Map of the Soul: 7,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (29,1, 01, false, PC, PC_PATH)
+INSERT INTO version VALUES (29,2, 02, false, PC, PC_PATH)
+INSERT INTO version VALUES (29,3, 03, false, PC, PC_PATH)
+INSERT INTO version VALUES (29,4, 04, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (30, Map of the Soul: 7 ~ The Journey,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (30,1, Standard Edition, false, PC, PC_PATH)
+INSERT INTO version VALUES (30,2, Limited Edition A, false, PC, PC_PATH)
+INSERT INTO version VALUES (30,3, Limited Edition B, false, PC, PC_PATH)
+INSERT INTO version VALUES (30,4, Limited Edition C, false, PC, PC_PATH)
+INSERT INTO version VALUES (30,5, Limited Edition D, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (31, BE,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (31,1, Deluxe, false, PC, PC_PATH)
+INSERT INTO version VALUES (31,2, Essential, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (58, Butter/Permission to Dance,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (58,1, Peaches, false, PC, PC_PATH)
+INSERT INTO version VALUES (58,2, Cream, false, PC, PC_PATH)
+
+
+
+INSERT INTO album VALUES (33, BTS, THE BEST,
+    false,
+    SV,
+    PC_PATH
+)
+INSERT INTO version VALUES (33,1, Standard, false, PC, PC_PATH)
+INSERT INTO version VALUES (33,2, Limited Edition A, false, PC, PC_PATH)
+INSERT INTO version VALUES (33,3, Limited Edition B, false, PC, PC_PATH)
+INSERT INTO version VALUES (33,4, Limited Edition C, false, PC, PC_PATH)
+
+
+
+
+
+SELECT ALL VALUES ADDED
+SELECT 
+SELECT Entries in album: 
+SELECT COUNT(*) FROM album
+SELECT 
+SELECT Entries in version: 
+SELECT COUNT(*) FROM version
+
+
+
