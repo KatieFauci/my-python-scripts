@@ -1,0 +1,29 @@
+
+
+<<<<<<<<<<<<<<< CONSUMER KEYS >>>>>>>>>>>>>>>>>>>>
+
+API KEY >>>>>>>>>>>
+b1s7YjRWM0odDGvEHwoMzmNEw
+
+
+API SECRET KEY >>>>>>>
+w21WRFOWXDq06ibyixTujewyeDgJSP6Tba2jRjgRu2zvFaHKKl
+
+
+
+
+
+
+<<<<<<<<<<<<<< AUTHENTICATION TOKENS >>>>>>>>>>>>>>
+
+
+BEARER TOKEN >>>>>>>>>>
+AAAAAAAAAAAAAAAAAAAAAB8PTgEAAAAAwJ%2Ba3G8dFL3cJk61RfNFeOCFqrQ%3DaBykTlXneRTqoe0K88H5JU3ET8trO7xddeywBT8GdyVpiilRhL
+
+
+ACCESS TOKEN >>>>>
+1928540977-pjQdrxZvmsTnps6rFVk3pOZRVNjPsRc5V4SXbA9
+
+
+ACCESS TOKEN SECRET >>>>>>
+c576g05in3LIaHEZqhAiupP2Gh9Rem7ltj1QKZfh63vZI
