@@ -22,12 +22,12 @@ def pull_data(root):
     for album in root.findall('album'):
         for a_album in album:
             if a_album.tag == 'album_id':
-                this_id = a_album.text
-
+                rel_id = a_album.text
+                mv_id = 1
         for child in album.findall('mv'):
             row = []
             #print(this_id)
-            row.append(this_id)
+            row.append(rel_id)
             row.append(mv_id)
             for field in fields:
                 if child.tag == field:
@@ -37,7 +37,7 @@ def pull_data(root):
                         if sub.tag == field:
                             row.append(sub.text)  
 
-            row.append(f'tn_{mv_id}.jpg')
+            row.append(f'tn_{rel_id}_{mv_id}.jpg')
             print(row)
             data.append(row)
             mv_id+=1
@@ -80,8 +80,11 @@ def save_xlsx(data, fields):
 path = input('File Path: \n')
 
 # fields to collect
-fields = ['mv_title', 
-          'mv_url']
+fields = ['album_id',
+          'mv_id',
+          'mv_title', 
+          'mv_url',
+          'mv_image',]
 
 
 
