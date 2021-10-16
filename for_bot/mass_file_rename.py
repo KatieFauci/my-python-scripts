@@ -1,4 +1,5 @@
 import os
+import pathlib
 
 
 #get folder path
@@ -9,8 +10,10 @@ count = 0
 #iterate through folder
 
 for num, file in enumerate(os.listdir()):
-    #rename files based on counta nd criteria
-    os.rename(file, f'{count}_{tag}.jpg')
+    # rename files based on count and criteria and maintain extention
+    file_extension = pathlib.Path(file).suffix
+    print(f'FILE EXTENSION >> {file_extension}')
+    os.rename(file, f'{count}_{tag}{file_extension}')
     count = count+1
 
 
