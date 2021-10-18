@@ -12,7 +12,7 @@ count = 0
 for num, file in enumerate(os.listdir()):
     # rename files based on count and criteria and maintain extention
     file_extension = pathlib.Path(file).suffix
-    print(f'FILE EXTENSION >> {file_extension}')
+    #print(f'FILE EXTENSION >> {file_extension}')
     os.rename(file, f'{count}_{tag}{file_extension}')
     count = count+1
 
